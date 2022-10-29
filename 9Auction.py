@@ -1,4 +1,4 @@
-#Eighth day challenge
+#Ninth day challenge
 #Secret auction game where bidders don't know each others bid
 
 import os
