@@ -4,6 +4,7 @@
 import random
 
 print("Welcome to the number guessing game!")
+print("I'm thinking of number between 1 and 100")
 difficulty = input("Choose a difficulty. Type Easy or Hard: ").lower()
 
 def choose_difficulty(user_diff):
@@ -31,6 +32,9 @@ while life > 0:
     check = give_hint(user_numberguess)
     if check is False:
         life = life - 1
+        if life == 0:
+            print("You ran out of attemps. Try again")
+            break
         print(f"You have {life} attempts remaining to guess the number")
     elif check is True:
         break
